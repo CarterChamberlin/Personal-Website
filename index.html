@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            color: #FFFFFF;
+            background: #4B4848;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Merge Sort</h1>
+
+
+    <form>
+        <label>min &nbsp;<input type="text" id="min"></label><br>
+        <label>max <input type="text" id="max"></label><br>
+        <label>size <input type="text" id="size"></label><br>
+        <input type="button" value="sort" onclick="sort()">
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        var array = [];
+        
+        
+        function sort() {
+            output.innerText = "";
+            
+            var minValue = parseInt(document.getElementById("min").value);
+            var maxValue = parseInt(document.getElementById("max").value);
+            var sizeValue = parseInt(document.getElementById("size").value);
+            output.innerText += "\nLower Limit: " + minValue; 
+            output.innerText += "\nUpper Limit: " + maxValue;
+            output.innerText += "\nArray Size: " + sizeValue;
+
+            getRandom(array, minValue, maxValue, sizeValue);
+
+            output.innerText += "\n\n Unsorted Array: \n" + array.join(", ");
+
+            mergeSort(array, 0, sizeValue - 1);
+
+            output.innerText += "\n\n Sorted Array: \n" + array.join(", ");
+            console.log(array);
+        }
+
+        function getRandom(array, min, max, size) {
+            var interval = max - min;
+            for(var i = 0; i < size; i++) {
+                array[i] = Math.floor((Math.random() * interval) + (min));
+            }
+            return array;
+        }
+
+        function mergeSort(array, p, r) {
+            var q;
+        
+            if (p < r) {
+                q = Math.floor((p + r) / 2);
+                mergeSort(array, p, q);
+                mergeSort(array, q + 1, r);
+                merge(array, p, q, r);
+            }
+        
+        }
+        
+        function merge(array, p, q, r) {
+            var tempList = array.slice();
+            
+            var i = p;
+            var j = q + 1;
+            var z = p;
+        
+            while ((i <= q) && (j <= r)) {
+                if (tempList[i] <= tempList[j]) {
+                    array[z] = tempList[i];
+                    i++;
+                } else {
+                    array[z] = tempList[j];
+                    j++;
+                }
+                z++;
+            }
+        
+            if (i <= q) {
+                var m = z;
+                while (m <= r) {
+                    array[m] = tempList[i];
+                    i++;
+                    m++;
+                }
+            } else if (j <= r) {
+                var n = z;
+                while (n <= r) {
+                    array[n] = tempList[j];
+                    j++;
+                    n++;
+                }
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
