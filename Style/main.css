@@ -1,5 +1,14 @@
 body {
-    background: #be66e4;
+    background: #d4d4d4;
     font-family: 'Roboto', sans-serif;
-    color: #2ae7c8;
+    color: #444;
+}
+
+h1 {
+    color: #444;
+}
+
+li, a {
+    color: #444;
+
 }
