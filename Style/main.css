@@ -56,14 +56,19 @@ nav a:hover {
     float: left;
     width: 100px;
     height: 100px;
-    background: url("http://blog.arcadiarobotics.org/wp-content/uploads/2014/08/rsz_robotlogoagain.png");
+    background: url("/Images/logo.png");
     background-repeat: no-repeat;
     padding-right: 10px;
 }
+#mast:after, #logo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 #coverphoto {
-    height: 40vh;
-    background: url("http://blog.arcadiarobotics.org/wp-content/uploads/2014/05/cropped-IMG_27432.jpg");
+    height: 35vh;
+    background: url("/Images/backgroundimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
