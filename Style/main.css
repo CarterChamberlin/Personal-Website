@@ -1,52 +1,99 @@
 body {
-    background: #d4d4d4;
+    background: #dfdfdf;
     font-family: 'Roboto', sans-serif;
-    color: #444;
+    color: #333333;
 }
 
-header {
+#wrapper {
+    max-width: 1268px;
+    margin: auto;
     background: white;
 }
+
+#mast {
+    padding: 10px;
+}
+
+#mast h1, #mast h2 {
+    font-weight: normal;
+    margin-left: 20px;
+
+}
+
+#mast h1 {
+    margin-bottom: 0;
+}
+
+#mast h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
 nav {
-    padding-bottom: 20px;
-}
-nav ul {
-    margin: 10px;
-    display: inline;
-    padding: 0px 0px 30px 0px;
-}
-
-nav ul li, nav ul a{
-    display: inline-block;
-    list-style-type: none;
-    text-align: center;
-    color: #444;
-    background: #b4b3b3;
-    padding: 5px 15px;
     float: right;
-    
 }
 
-h1 {
-    color: #444;
-    margin-left: 50px;
-}
-h4 {
-    color: #444;
-    margin-left: 50px;
-    display: inline;
+nav ul {
+    padding: 1px;
 }
 
+nav li {
+    display: inline-block;
+    margin: 3px;
+    list-style-type: none;
+}
 
-p {
-    width: 1000px;
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: #5151f8;
+}
+
+#logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: url("http://blog.arcadiarobotics.org/wp-content/uploads/2014/08/rsz_robotlogoagain.png");
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+#coverphoto {
+    height: 40vh;
+    background: url("http://blog.arcadiarobotics.org/wp-content/uploads/2014/05/cropped-IMG_27432.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#content {
+    padding: 0px 30px 20px 30px;
     line-height: 1.5;
-    padding: 0px 0px 0px 300px;
-
 }
 
-.secondary {
-    line-height: 1.5;
-    margin: 0px 0px 0px 300px;
-    color: #333333;
+#content h3, #content h4 {
+    font-weight: normal;
+    margin: 10px 0px 10px 0px;
+}
+
+#content h3 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#content h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#footer {
+    background: #dadada;
+    font-size: 12px;
+    color: #555;
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid #ccc;
 }
