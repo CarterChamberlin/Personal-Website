@@ -1,13 +1,17 @@
 body {
-    background: #dfdfdf;
+    background: #ebebeb;
     font-family: 'Roboto', sans-serif;
     color: #333333;
 }
 
 #wrapper {
-    max-width: 1268px;
+    max-width: 1400px;
     margin: auto;
-    background: white;
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0px 0px 2px #818181;
 }
 
 #mast {
@@ -34,13 +38,14 @@ nav {
 }
 
 nav ul {
-    padding: 1px;
+    padding: 15px 20px 1px 1px;
 }
 
 nav li {
     display: inline-block;
-    margin: 3px;
+    margin: 5px;
     list-style-type: none;
+    font-size: 1.1em;
 }
 
 nav a {
@@ -60,6 +65,7 @@ nav a:hover {
     background-repeat: no-repeat;
     padding-right: 10px;
 }
+
 #mast:after, #logo:after {
     content: "";
     display: table;
@@ -72,6 +78,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border: 1px solid #7e7d7d;
 }
 
 #content {
@@ -95,10 +102,20 @@ nav a:hover {
 }
 
 #footer {
-    background: #dadada;
+    background: #dfdfdf;
     font-size: 12px;
-    color: #555;
+    color: #5e5e5e;
     padding: 10px 10px;
     text-align: center;
-    border: 1px solid #ccc;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#title {
+    text-align: left;
+    background: #f9f9f9;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 2px #818181;
+}
+#title h2 {
+    font-weight: normal;
 }
