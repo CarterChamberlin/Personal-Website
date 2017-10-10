@@ -1,0 +1,67 @@
+#content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#content a:hover {
+    color: #5151f8;
+}
+
+#content h4 {
+    text-align: center;
+}
+
+#boeing {
+    margin: auto;
+    height: 80px;
+    width: 230px;
+    background: url("../Images/boeing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+}
+
+#microchip {
+    margin: auto;
+    height: 140px;
+    width: 290px;
+    background: url("/Images/microchip.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+}
+
+#utc {
+    margin: auto;
+    height: 63px;
+    width: 300px;
+    background: url("/Images/utc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+}
+
+#ahs {
+    margin: auto;
+    height: 94px;
+    width: 266px;
+    background: url("/Images/ahs.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+}
+
+#solidworks {
+    margin: auto;
+    height: 72px;
+    width: 270px;
+    background: url("/Images/solidworks.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+}
