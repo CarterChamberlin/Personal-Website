@@ -10,5 +10,8 @@ h1 {
 
 li, a {
     color: #444;
-    background: #777;
+    background: #b4b3b3;
+    margin: 5px;
+    width: 150px;
+    text-align: center;
 }
